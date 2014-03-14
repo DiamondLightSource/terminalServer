@@ -1,0 +1,145 @@
+# AcsChannel.template
+# ACS channel information
+# % macro, P,    Record name prefix
+# % macro, R,    Record name suffix
+# % macro, CHAN, Channel number
+# % macro, HOST, SNMP server host name
+
+# Process this record to poll all the infrequent changing parameters
+
+record(seq, "$(P)$(R):$(CHAN):POLL")
+{
+  field(SELM, "All")
+  field(DOL1, "1")
+  field(LNK1, "$(P)$(R):$(CHAN):APPLICATION.PROC")
+  field(DOL2, "1")
+  field(LNK2, "$(P)$(R):$(CHAN):PORT.PROC")
+  field(DOL3, "1")
+  field(LNK3, "$(P)$(R):$(CHAN):ALIAS.PROC")
+  field(DOL4, "1")
+  field(LNK4, "$(P)$(R):$(CHAN):BAUDRATE.PROC")
+  field(DOL5, "1")
+  field(LNK5, "$(P)$(R):$(CHAN):DATABITS_R.PROC")
+  field(DOL6, "1")
+  field(LNK6, "$(P)$(R):$(CHAN):STOPBITS_R.PROC")
+  field(DOL7, "1")
+  field(LNK7, "$(P)$(R):$(CHAN):PARITY.PROC")
+  field(DOL8, "1")
+  field(LNK8, "$(P)$(R):$(CHAN):FLOWCONTROL.PROC")
+}
+
+# Main port mode
+
+record(stringin, "$(P)$(R):$(CHAN):APPLICATION")
+{
+  field(DESC, "Port application")
+  field(DTYP, "Snmp")
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.24.$(CHAN)")
+}
+
+# TCP socket
+
+record(longin, "$(P)$(R):$(CHAN):PORT")
+{
+  field(DESC, "Port number" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.26.$(CHAN)" )
+}
+
+# Communication parameters
+
+record(stringin, "$(P)$(R):$(CHAN):ALIAS")
+{
+  field(DESC, "Port alias" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.3.$(CHAN)" )
+}
+
+record(longin, "$(P)$(R):$(CHAN):BAUDRATE")
+{
+  field(DESC, "Port baud rate" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.4.$(CHAN)" )
+}
+
+record(longin, "$(P)$(R):$(CHAN):DATABITS_R")
+{
+  field(DESC, "Port data bits" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.5.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):DATABITS")
+}
+record(mbbi, "$(P)$(R):$(CHAN):DATABITS")
+{
+  field(DESC, "Port data bits")
+  field(DTYP, "Raw Soft Channel")
+  field(INP,  "$(P)$(R):$(CHAN):DATABITS_R")
+  field(ZRVL, "5")
+  field(ONVL, "6")
+  field(TWVL, "7")
+  field(THVL, "8")
+  field(ZRST, "5 bits")
+  field(ONST, "6 bits")
+  field(TWST, "7 bits")
+  field(THST, "8 bits")
+}
+
+record(longin, "$(P)$(R):$(CHAN):STOPBITS_R")
+{
+  field(DESC, "Port stop bits" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.6.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):STOPBITS")
+}
+record(mbbi, "$(P)$(R):$(CHAN):STOPBITS")
+{
+  field(DESC, "Port stop bits")
+  field(DTYP, "Raw Soft Channel")
+  field(INP,  "$(P)$(R):$(CHAN):STOPBITS_R")
+  field(ZRVL, "1")
+  field(ONVL, "2")
+  field(ZRST, "1 bit")
+  field(ONST, "2 bits")
+}
+
+record(stringin, "$(P)$(R):$(CHAN):PARITY")
+{
+  field(DESC, "Port parity" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.7.$(CHAN)" )
+}
+
+record(stringin, "$(P)$(R):$(CHAN):FLOWCONTROL")
+{
+  field(DESC, "Port flow control" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.2.6.2.1.1.8.$(CHAN)" )
+}
+
+# Monitoring
+
+record(stringout, "$(P)$(R):$(CHAN):REMOTEIP")
+{
+  field(DESC, "Remote IP" )
+  field(VAL,  "Not Available")
+}
+
+record(longin, "$(P)$(R):$(CHAN):TXTOTALCOUNT")
+{
+  field(DESC, "Port parity" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.3.1.1.5.$(CHAN)" )
+  field(SCAN, "5 second")
+  field(FLNK, "$(P)$(R):$(CHAN):PARITY")
+}
+
+record(longin, "$(P)$(R):$(CHAN):RXTOTALCOUNT")
+{
+  field(DESC, "Port parity" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 avocent 1.3.6.1.4.1.2925.4.3.1.1.6.$(CHAN)" )
+  field(SCAN, "5 second")
+  field(FLNK, "$(P)$(R):$(CHAN):PARITY")
+}
+
+

@@ -1,0 +1,305 @@
+# MoxaChannel.template
+# Moxa channel information
+# % macro, P,    Record name prefix
+# % macro, R,    Record name suffix
+# % macro, CHAN, Channel number
+# % macro, HOST, SNMP server host name
+
+# Process this record to poll all the infrequent changing parameters
+
+record(seq, "$(P)$(R):$(CHAN):POLL")
+{
+  field(SELM, "All")
+  field(DOL1, "1")
+  field(LNK1, "$(P)$(R):$(CHAN):WHICHPORT.PROC")
+  field(DOL2, "1")
+  field(LNK2, "$(P)$(R):$(CHAN):APPLICATION_R.PROC")
+  field(DOL3, "1")
+  field(LNK3, "$(P)$(R):$(CHAN):ALIAS.PROC")
+  field(DOL4, "1")
+  field(LNK4, "$(P)$(R):$(CHAN):BAUDRATE.PROC")
+  field(DOL5, "1")
+  field(LNK5, "$(P)$(R):$(CHAN):DATABITS_R.PROC")
+  field(DOL6, "1")
+  field(LNK6, "$(P)$(R):$(CHAN):STOPBITS_R.PROC")
+  field(DOL7, "1")
+  field(LNK7, "$(P)$(R):$(CHAN):PARITY_R.PROC")
+  field(DOL8, "1")
+  field(LNK8, "$(P)$(R):$(CHAN):FLOWCONTROL_R.PROC")
+  field(DOL9, "1")
+  field(LNK9, "$(P)$(R):$(CHAN):DEVCTLPORT.PROC")
+}
+
+# Main port mode
+
+record(longin, "$(P)$(R):$(CHAN):APPLICATION_R")
+{
+  field(DESC, "Port application")
+  field(DTYP, "Snmp")
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.1.1.1.2.$(CHAN)")
+}
+record(mbbi, "$(P)$(R):$(CHAN):APPLICATION")
+{
+  field(DESC, "Port application")
+  field(DTYP, "Raw Soft Channel")
+  field(INP,  "$(P)$(R):$(CHAN):APPLICATION_R CP")
+  field(ZRVL, "0")
+  field(ONVL, "4")
+  field(TWVL, "11")
+  field(THVL, "13")
+  field(FRVL, "12")
+  field(FVVL, "2")
+  field(SXVL, "3")
+  field(SVVL, "6")
+  field(EIVL, "1")
+  field(ZRST, "disable")
+  field(ONST, "device control")
+  field(TWST, "socket")
+  field(THST, "pair connection")
+  field(FRST, "ethernet modem")
+  field(FVST, "terminal")
+  field(SXST, "reverse terminal")
+  field(SVST, "printer")
+  field(EIST, "dial in/out")
+  field(FLNK, "$(P)$(R):$(CHAN):POLLPORT")
+}
+
+# TCP socket
+#  This is all rather awkward as the result from the SNMP request does
+#  not get into the PV in time for another PV that is processed by a
+#  forward link.  So this part is organised with CP links which do go off
+#  when the data has returned.
+
+record(calc, "$(P)$(R):$(CHAN):POLLPORT")
+{
+  field(INPA, "$(P)$(R):$(CHAN):APPLICATION CP")
+  field(CALC, "A+1")
+  field(FLNK, "$(P)$(R):$(CHAN):POLLPORT2")
+}
+record(fanout, "$(P)$(R):$(CHAN):POLLPORT2")
+{
+  field(LNK1, "$(P)$(R):$(CHAN):WHICHPORT")
+  field(LNK2, "$(P)$(R):$(CHAN):DEVCTLPORT")
+}
+record(seq, "$(P)$(R):$(CHAN):WHICHPORT")
+{
+  field(SELM, "Specified")
+  field(SELL, "$(P)$(R):$(CHAN):POLLPORT")
+  field(DOL1, "$(P)$(R):$(CHAN):NOPORT")
+  field(LNK1, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL2, "$(P)$(R):$(CHAN):DEVCTLPORT")
+  field(LNK2, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL3, "$(P)$(R):$(CHAN):SOCKETPORT")
+  field(LNK3, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL4, "$(P)$(R):$(CHAN):PAIRPORT")
+  field(LNK4, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL5, "$(P)$(R):$(CHAN):ETHMODEMPORT")
+  field(LNK5, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL6, "$(P)$(R):$(CHAN):NOPORT")
+  field(LNK6, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL7, "$(P)$(R):$(CHAN):REVTERMPORT")
+  field(LNK7, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL8, "$(P)$(R):$(CHAN):PRINTERPORT")
+  field(LNK8, "$(P)$(R):$(CHAN):PORT PP")
+  field(DOL9, "$(P)$(R):$(CHAN):NOPORT")
+  field(LNK9, "$(P)$(R):$(CHAN):PORT PP")
+}
+record(longout, "$(P)$(R):$(CHAN):PORT")
+{
+  field(VAL, "0")
+}
+
+record(longout, "$(P)$(R):$(CHAN):NOPORT")
+{
+  field(VAL, "0")
+}
+
+record(longin, "$(P)$(R):$(CHAN):DEVCTLPORT")
+{
+  field(DESC, "Port number" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.1.1.1.11.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):SOCKETPORT")
+}
+record(longin, "$(P)$(R):$(CHAN):SOCKETPORT")
+{
+  field(DESC, "Port number" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.2.1.1.8.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):PAIRPORT")
+}
+record(longin, "$(P)$(R):$(CHAN):PAIRPORT")
+{
+  field(DESC, "Port number" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.3.1.1.5.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):ETHMODEMPORT")
+}
+record(longin, "$(P)$(R):$(CHAN):ETHMODEMPORT")
+{
+  field(DESC, "Port number" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.4.1.1.2.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):REVTERMPORT")
+}
+record(longin, "$(P)$(R):$(CHAN):REVTERMPORT")
+{
+  field(DESC, "Port number" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.6.1.1.3.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):PRINTERPORT")
+}
+record(longin, "$(P)$(R):$(CHAN):PRINTERPORT")
+{
+  field(DESC, "Port number" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.7.1.1.2.$(CHAN)" )
+}
+record(calcout, "$(P)$(R):$(CHAN):SELPORT1")
+{
+  field(INPA, "$(P)$(R):$(CHAN):DEVCTLPORT CP")
+  field(INPB, "$(P)$(R):$(CHAN):SOCKETPORT CP")
+  field(INPC, "$(P)$(R):$(CHAN):PAIRPORT CP")
+  field(INPD, "$(P)$(R):$(CHAN):ETHMODEMPORT CP")
+  field(INPE, "$(P)$(R):$(CHAN):REVTERMPORT CP")
+  field(INPF, "$(P)$(R):$(CHAN):PRINTERPORT CP")
+  field(CALC, "A+B+C+D+E+F")
+  field(OOPT, "Every Time")
+  field(DOPT, "Use OCAL")
+  field(OCAL, "1")
+  field(OUT,  "$(P)$(R):$(CHAN):WHICHPORT.PROC")
+}
+
+# Communication parameters
+
+record(stringin, "$(P)$(R):$(CHAN):ALIAS")
+{
+  field(DESC, "Port alias" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.1.$(CHAN)" )
+}
+
+record(longin, "$(P)$(R):$(CHAN):BAUDRATE")
+{
+  field(DESC, "Port baud rate" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.3.$(CHAN)" )
+}
+
+record(longin, "$(P)$(R):$(CHAN):DATABITS_R")
+{
+  field(DESC, "Port data bits" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.5.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):DATABITS")
+}
+record(mbbi, "$(P)$(R):$(CHAN):DATABITS")
+{
+  field(DESC, "Port data bits")
+  field(DTYP, "Raw Soft Channel")
+  field(INP,  "$(P)$(R):$(CHAN):DATABITS_R")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "5 bits")
+  field(ONST, "6 bits")
+  field(TWST, "7 bits")
+  field(THST, "8 bits")
+}
+
+record(longin, "$(P)$(R):$(CHAN):STOPBITS_R")
+{
+  field(DESC, "Port stop bits" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.6.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):STOPBITS")
+}
+record(mbbi, "$(P)$(R):$(CHAN):STOPBITS")
+{
+  field(DESC, "Port stop bits")
+  field(DTYP, "Raw Soft Channel")
+  field(INP,  "$(P)$(R):$(CHAN):STOPBITS_R")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(ZRST, "1 bit")
+  field(ONST, "1.5 bits")
+  field(TWST, "2 bits")
+}
+
+record(longin, "$(P)$(R):$(CHAN):PARITY_R")
+{
+  field(DESC, "Port parity" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.7.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):PARITY")
+}
+record(mbbi, "$(P)$(R):$(CHAN):PARITY")
+{
+  field(DESC, "Port parity")
+  field(DTYP, "Raw Soft Channel")
+  field(INP,  "$(P)$(R):$(CHAN):PARITY_R")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(FRVL, "4")
+  field(ZRST, "none")
+  field(ONST, "odd")
+  field(TWST, "even")
+  field(THST, "mark")
+  field(FRST, "space")
+}
+
+record(longin, "$(P)$(R):$(CHAN):FLOWCONTROL_R")
+{
+  field(DESC, "Port flow control" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.8.$(CHAN)" )
+  field(FLNK, "$(P)$(R):$(CHAN):FLOWCONTROL")
+}
+record(mbbi, "$(P)$(R):$(CHAN):FLOWCONTROL")
+{
+  field(DESC, "Port parity")
+  field(DTYP, "Raw Soft Channel")
+  field(INP,  "$(P)$(R):$(CHAN):FLOWCONTROL_R")
+  field(ZRVL, "0")
+  field(ONVL, "1")
+  field(TWVL, "2")
+  field(THVL, "3")
+  field(ZRST, "none")
+  field(ONST, "rts/cts")
+  field(TWST, "xon/xoff")
+  field(THST, "dtr/dsr")
+}
+
+# Monitoring
+
+record(stringin, "$(P)$(R):$(CHAN):REMOTEIP")
+{
+  field(DESC, "Remote IP" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.6.1.1.1.2.$(CHAN).1" )
+  field(SCAN, "5 second")
+}
+
+record(longin, "$(P)$(R):$(CHAN):TXTOTALCOUNT")
+{
+  field(DESC, "Port parity" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.6.2.1.1.3.$(CHAN)" )
+  field(SCAN, "5 second")
+  field(FLNK, "$(P)$(R):$(CHAN):PARITY")
+}
+
+record(longin, "$(P)$(R):$(CHAN):RXTOTALCOUNT")
+{
+  field(DESC, "Port parity" )
+  field(DTYP, "Snmp" )
+  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.6.2.1.1.4.$(CHAN)" )
+  field(SCAN, "5 second")
+  field(FLNK, "$(P)$(R):$(CHAN):PARITY")
+}
+
+

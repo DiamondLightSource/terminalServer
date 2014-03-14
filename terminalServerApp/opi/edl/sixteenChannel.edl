@@ -1,0 +1,4855 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 97
+y 237
+w 826
+h 491
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 16
+ctlFgColor2 index 0
+ctlBgColor1 index 10
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 11
+title "Terminal Server"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 60
+w 815
+h 425
+lineColor index 14
+fill
+fillColor index 5
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 65
+w 105
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Application"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 320
+y 65
+w 75
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Baud rate"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 35
+y 65
+w 115
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Alias"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 400
+y 65
+w 50
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Data"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 455
+y 65
+w 50
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Stop"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 510
+y 65
+w 50
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Parity"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 565
+y 65
+w 50
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Flow"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 620
+y 65
+w 75
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Conn IP"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 700
+y 65
+w 55
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Tx Count"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 760
+y 65
+w 55
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Rx Count"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 235
+w 115
+h 20
+controlPv "$(P):7:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 235
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "7"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 235
+w 105
+h 20
+controlPv "$(P):7:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 235
+w 75
+h 20
+controlPv "$(P):7:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 235
+w 50
+h 20
+controlPv "$(P):7:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 235
+w 50
+h 20
+controlPv "$(P):7:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 235
+w 50
+h 20
+controlPv "$(P):7:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 235
+w 50
+h 20
+controlPv "$(P):7:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 235
+w 75
+h 20
+controlPv "$(P):7:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 235
+w 55
+h 20
+controlPv "$(P):7:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 235
+w 55
+h 20
+controlPv "$(P):7:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 110
+w 115
+h 20
+controlPv "$(P):2:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 110
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "2"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 110
+w 105
+h 20
+controlPv "$(P):2:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 110
+w 75
+h 20
+controlPv "$(P):2:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 110
+w 50
+h 20
+controlPv "$(P):2:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 110
+w 50
+h 20
+controlPv "$(P):2:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 110
+w 50
+h 20
+controlPv "$(P):2:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 110
+w 50
+h 20
+controlPv "$(P):2:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 110
+w 75
+h 20
+controlPv "$(P):2:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 110
+w 55
+h 20
+controlPv "$(P):2:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 110
+w 55
+h 20
+controlPv "$(P):2:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 135
+w 115
+h 20
+controlPv "$(P):3:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 135
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "3"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 135
+w 105
+h 20
+controlPv "$(P):3:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 135
+w 75
+h 20
+controlPv "$(P):3:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 135
+w 50
+h 20
+controlPv "$(P):3:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 135
+w 50
+h 20
+controlPv "$(P):3:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 135
+w 50
+h 20
+controlPv "$(P):3:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 135
+w 50
+h 20
+controlPv "$(P):3:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 135
+w 75
+h 20
+controlPv "$(P):3:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 135
+w 55
+h 20
+controlPv "$(P):3:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 135
+w 55
+h 20
+controlPv "$(P):3:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 160
+w 115
+h 20
+controlPv "$(P):4:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 160
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "4"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 160
+w 105
+h 20
+controlPv "$(P):4:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 160
+w 75
+h 20
+controlPv "$(P):4:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 160
+w 50
+h 20
+controlPv "$(P):4:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 160
+w 50
+h 20
+controlPv "$(P):4:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 160
+w 50
+h 20
+controlPv "$(P):4:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 160
+w 50
+h 20
+controlPv "$(P):4:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 160
+w 75
+h 20
+controlPv "$(P):4:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 160
+w 55
+h 20
+controlPv "$(P):4:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 160
+w 55
+h 20
+controlPv "$(P):4:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 185
+w 115
+h 20
+controlPv "$(P):5:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 185
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "5"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 185
+w 105
+h 20
+controlPv "$(P):5:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 185
+w 75
+h 20
+controlPv "$(P):5:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 185
+w 50
+h 20
+controlPv "$(P):5:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 185
+w 50
+h 20
+controlPv "$(P):5:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 185
+w 50
+h 20
+controlPv "$(P):5:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 185
+w 50
+h 20
+controlPv "$(P):5:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 185
+w 75
+h 20
+controlPv "$(P):5:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 185
+w 55
+h 20
+controlPv "$(P):5:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 185
+w 55
+h 20
+controlPv "$(P):5:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 210
+w 115
+h 20
+controlPv "$(P):6:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 210
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "6"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 210
+w 105
+h 20
+controlPv "$(P):6:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 210
+w 75
+h 20
+controlPv "$(P):6:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 210
+w 50
+h 20
+controlPv "$(P):6:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 210
+w 50
+h 20
+controlPv "$(P):6:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 210
+w 50
+h 20
+controlPv "$(P):6:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 210
+w 50
+h 20
+controlPv "$(P):6:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 210
+w 75
+h 20
+controlPv "$(P):6:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 210
+w 55
+h 20
+controlPv "$(P):6:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 210
+w 55
+h 20
+controlPv "$(P):6:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 260
+w 115
+h 20
+controlPv "$(P):8:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 260
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "8"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 260
+w 105
+h 20
+controlPv "$(P):8:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 260
+w 75
+h 20
+controlPv "$(P):8:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 260
+w 50
+h 20
+controlPv "$(P):8:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 260
+w 50
+h 20
+controlPv "$(P):8:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 260
+w 50
+h 20
+controlPv "$(P):8:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 260
+w 50
+h 20
+controlPv "$(P):8:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 260
+w 75
+h 20
+controlPv "$(P):8:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 260
+w 55
+h 20
+controlPv "$(P):8:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 260
+w 55
+h 20
+controlPv "$(P):8:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 285
+w 115
+h 20
+controlPv "$(P):9:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 285
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "9"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 285
+w 105
+h 20
+controlPv "$(P):9:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 285
+w 75
+h 20
+controlPv "$(P):9:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 285
+w 50
+h 20
+controlPv "$(P):9:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 285
+w 50
+h 20
+controlPv "$(P):9:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 285
+w 50
+h 20
+controlPv "$(P):9:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 285
+w 50
+h 20
+controlPv "$(P):9:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 285
+w 75
+h 20
+controlPv "$(P):9:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 285
+w 55
+h 20
+controlPv "$(P):9:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 285
+w 55
+h 20
+controlPv "$(P):9:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 310
+w 115
+h 20
+controlPv "$(P):10:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 310
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "10"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 310
+w 105
+h 20
+controlPv "$(P):10:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 310
+w 75
+h 20
+controlPv "$(P):10:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 310
+w 50
+h 20
+controlPv "$(P):10:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 310
+w 50
+h 20
+controlPv "$(P):10:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 310
+w 50
+h 20
+controlPv "$(P):10:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 310
+w 50
+h 20
+controlPv "$(P):10:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 310
+w 75
+h 20
+controlPv "$(P):10:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 310
+w 55
+h 20
+controlPv "$(P):10:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 310
+w 55
+h 20
+controlPv "$(P):10:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 335
+w 115
+h 20
+controlPv "$(P):11:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 335
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "11"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 335
+w 105
+h 20
+controlPv "$(P):11:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 335
+w 75
+h 20
+controlPv "$(P):11:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 335
+w 50
+h 20
+controlPv "$(P):11:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 335
+w 50
+h 20
+controlPv "$(P):11:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 335
+w 50
+h 20
+controlPv "$(P):11:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 335
+w 50
+h 20
+controlPv "$(P):11:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 335
+w 75
+h 20
+controlPv "$(P):11:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 335
+w 55
+h 20
+controlPv "$(P):11:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 335
+w 55
+h 20
+controlPv "$(P):11:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 360
+w 115
+h 20
+controlPv "$(P):12:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 360
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "12"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 360
+w 105
+h 20
+controlPv "$(P):12:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 360
+w 75
+h 20
+controlPv "$(P):12:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 360
+w 50
+h 20
+controlPv "$(P):12:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 360
+w 50
+h 20
+controlPv "$(P):12:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 360
+w 50
+h 20
+controlPv "$(P):12:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 360
+w 50
+h 20
+controlPv "$(P):12:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 360
+w 75
+h 20
+controlPv "$(P):12:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 360
+w 55
+h 20
+controlPv "$(P):12:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 360
+w 55
+h 20
+controlPv "$(P):12:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 385
+w 115
+h 20
+controlPv "$(P):13:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 385
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "13"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 385
+w 105
+h 20
+controlPv "$(P):13:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 385
+w 75
+h 20
+controlPv "$(P):13:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 385
+w 50
+h 20
+controlPv "$(P):13:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 385
+w 50
+h 20
+controlPv "$(P):13:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 385
+w 50
+h 20
+controlPv "$(P):13:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 385
+w 50
+h 20
+controlPv "$(P):13:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 385
+w 75
+h 20
+controlPv "$(P):13:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 385
+w 55
+h 20
+controlPv "$(P):13:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 385
+w 55
+h 20
+controlPv "$(P):13:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 410
+w 115
+h 20
+controlPv "$(P):14:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 410
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "14"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 410
+w 105
+h 20
+controlPv "$(P):14:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 410
+w 75
+h 20
+controlPv "$(P):14:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 410
+w 50
+h 20
+controlPv "$(P):14:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 410
+w 50
+h 20
+controlPv "$(P):14:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 410
+w 50
+h 20
+controlPv "$(P):14:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 410
+w 50
+h 20
+controlPv "$(P):14:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 410
+w 75
+h 20
+controlPv "$(P):14:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 410
+w 55
+h 20
+controlPv "$(P):14:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 410
+w 55
+h 20
+controlPv "$(P):14:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 435
+w 115
+h 20
+controlPv "$(P):15:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 435
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "15"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 435
+w 105
+h 20
+controlPv "$(P):15:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 435
+w 75
+h 20
+controlPv "$(P):15:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 435
+w 50
+h 20
+controlPv "$(P):15:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 435
+w 50
+h 20
+controlPv "$(P):15:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 435
+w 50
+h 20
+controlPv "$(P):15:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 435
+w 50
+h 20
+controlPv "$(P):15:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 435
+w 75
+h 20
+controlPv "$(P):15:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 435
+w 55
+h 20
+controlPv "$(P):15:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 435
+w 55
+h 20
+controlPv "$(P):15:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 460
+w 115
+h 20
+controlPv "$(P):16:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 460
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "16"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 460
+w 105
+h 20
+controlPv "$(P):16:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 460
+w 75
+h 20
+controlPv "$(P):16:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 460
+w 50
+h 20
+controlPv "$(P):16:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 460
+w 50
+h 20
+controlPv "$(P):16:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 460
+w 50
+h 20
+controlPv "$(P):16:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 460
+w 50
+h 20
+controlPv "$(P):16:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 460
+w 75
+h 20
+controlPv "$(P):16:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 460
+w 55
+h 20
+controlPv "$(P):16:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 460
+w 55
+h 20
+controlPv "$(P):16:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 35
+y 85
+w 115
+h 20
+controlPv "$(P):1:ALIAS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 10
+y 85
+w 20
+h 20
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "1"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 155
+y 85
+w 105
+h 20
+controlPv "$(P):1:APPLICATION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 320
+y 85
+w 75
+h 20
+controlPv "$(P):1:BAUDRATE"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 400
+y 85
+w 50
+h 20
+controlPv "$(P):1:DATABITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 455
+y 85
+w 50
+h 20
+controlPv "$(P):1:STOPBITS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 510
+y 85
+w 50
+h 20
+controlPv "$(P):1:PARITY"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 565
+y 85
+w 50
+h 20
+controlPv "$(P):1:FLOWCONTROL"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 620
+y 85
+w 75
+h 20
+controlPv "$(P):1:REMOTEIP"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 700
+y 85
+w 55
+h 20
+controlPv "$(P):1:TXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 760
+y 85
+w 55
+h 20
+controlPv "$(P):1:RXTOTALCOUNT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 265
+y 65
+w 50
+h 15
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Port"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 235
+w 50
+h 20
+controlPv "$(P):7:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 110
+w 50
+h 20
+controlPv "$(P):2:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 135
+w 50
+h 20
+controlPv "$(P):3:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 160
+w 50
+h 20
+controlPv "$(P):4:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 185
+w 50
+h 20
+controlPv "$(P):5:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 210
+w 50
+h 20
+controlPv "$(P):6:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 260
+w 50
+h 20
+controlPv "$(P):8:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 285
+w 50
+h 20
+controlPv "$(P):9:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 310
+w 50
+h 20
+controlPv "$(P):10:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 335
+w 50
+h 20
+controlPv "$(P):11:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 360
+w 50
+h 20
+controlPv "$(P):12:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 385
+w 50
+h 20
+controlPv "$(P):13:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 410
+w 50
+h 20
+controlPv "$(P):14:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 435
+w 50
+h 20
+controlPv "$(P):15:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 460
+w 50
+h 20
+controlPv "$(P):16:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 265
+y 85
+w 50
+h 20
+controlPv "$(P):1:PORT"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 5
+w 65
+h 21
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Model"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 70
+y 5
+w 105
+h 20
+controlPv "$(P):MODELNAME"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 185
+y 5
+w 65
+h 21
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "SerialN"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 250
+y 5
+w 105
+h 20
+controlPv "$(P):SERIALNUMBER"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 365
+y 5
+w 65
+h 21
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "FwVersion"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 430
+y 5
+w 105
+h 20
+controlPv "$(P):FWVERSION"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 365
+y 30
+w 65
+h 21
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "IpAddr"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 430
+y 30
+w 105
+h 20
+controlPv "$(P):IPADDRESS"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 30
+w 65
+h 21
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Name"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 70
+y 30
+w 105
+h 20
+controlPv "$(P):SERVERNAME"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 185
+y 30
+w 65
+h 21
+font "arial-bold-r-12.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 8
+value {
+  "Location"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 250
+y 30
+w 105
+h 20
+controlPv "$(P):SERVERLOC"
+font "arial-bold-r-10.0"
+fontAlign "center"
+fgColor index 16
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+noExecuteClipMask
+endObjectProperties
+

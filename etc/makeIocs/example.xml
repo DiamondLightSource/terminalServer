@@ -1,3 +1,37 @@
 <?xml version="1.0" ?>
 <components arch="linux-x86">
+	<terminalServer.moxa HOST="172.23.115.3" NCHANS="16" P="BL15I-CS-MOXA-01" R="" name="Moxa1"/>
+	<terminalServer.acs HOST="172.23.115.2" NCHANS="16" P="BL15I-CS-ACS-01" R="" name="acs1"/>
+	<terminalServer.acsChannel CHAN="1" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan1"/>
+	<terminalServer.acsChannel CHAN="2" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan2"/>
+	<terminalServer.acsChannel CHAN="3" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan3"/>
+	<terminalServer.acsChannel CHAN="4" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan4"/>
+	<terminalServer.acsChannel CHAN="5" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan5"/>
+	<terminalServer.acsChannel CHAN="6" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan6"/>
+	<terminalServer.acsChannel CHAN="7" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan7"/>
+	<terminalServer.acsChannel CHAN="8" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan8"/>
+	<terminalServer.acsChannel CHAN="9" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan9"/>
+	<terminalServer.acsChannel CHAN="10" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan10"/>
+	<terminalServer.acsChannel CHAN="11" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan11"/>
+	<terminalServer.acsChannel CHAN="12" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan12"/>
+	<terminalServer.acsChannel CHAN="13" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan13"/>
+	<terminalServer.acsChannel CHAN="14" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan14"/>
+	<terminalServer.acsChannel CHAN="15" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan15"/>
+	<terminalServer.acsChannel CHAN="16" HOST="172.23.115.2" P="BL15I-CS-ACS-01" R="" name="Acs1Chan16"/>
+	<terminalServer.moxaChannel CHAN="1" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan1"/>
+	<terminalServer.moxaChannel CHAN="2" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan2"/>
+	<terminalServer.moxaChannel CHAN="3" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan3"/>
+	<terminalServer.moxaChannel CHAN="4" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan4"/>
+	<terminalServer.moxaChannel CHAN="5" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan5"/>
+	<terminalServer.moxaChannel CHAN="6" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan6"/>
+	<terminalServer.moxaChannel CHAN="7" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan7"/>
+	<terminalServer.moxaChannel CHAN="8" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan8"/>
+	<terminalServer.moxaChannel CHAN="9" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan9"/>
+	<terminalServer.moxaChannel CHAN="10" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan10"/>
+	<terminalServer.moxaChannel CHAN="11" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan11"/>
+	<terminalServer.moxaChannel CHAN="12" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan12"/>
+	<terminalServer.moxaChannel CHAN="13" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan13"/>
+	<terminalServer.moxaChannel CHAN="14" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan14"/>
+	<terminalServer.moxaChannel CHAN="15" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan15"/>
+	<terminalServer.moxaChannel CHAN="16" HOST="172.23.115.3" P="BL15I-CS-MOXA-01" R="" name="Moxa1Chan16"/>
 </components>
