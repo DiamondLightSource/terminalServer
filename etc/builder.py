@@ -37,11 +37,10 @@ class acs(Device):
         Device.__init__(self)
         _acs(P=P, R=R, HOST=HOST, NCHANS=NCHANS)
         for i in range(NCHANS):
-            _acsChannel(P=P, R=R, CHAN=i, HOST=HOST)
+            _acsChannel(P=P, R=R, CHAN=i+1, HOST=HOST)
 
     ArgInfo = makeArgInfo(__init__,
         P = Simple("PV prefix", str),
         R = Simple("PV suffix", str),
         HOST = Simple("Host IP address", str),
         NCHANS = Simple("Number of channels", int))
-    
