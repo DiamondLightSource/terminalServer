@@ -11,6 +11,8 @@ include $(TOP)/configure/CONFIG
 # In a Diamond Support Module, install
 # templates like this
 #
+DB += TerminalServer32.template
+DB += TerminalServer16.template
 DB += Moxa.template
 DB += MoxaChannel.template
 DB += Acs.template
