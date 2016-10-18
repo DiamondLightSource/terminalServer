@@ -155,7 +155,7 @@ record(longin, "$(P)$(R):$(CHAN):APPLICATIONRD")
 {
   field(DESC, "Port application")
   field(DTYP, "Snmp")
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.1.1.1.2.$(CHAN)")
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.1.1.1.1.2.$(CHAN)")
 }
 #% archiver 60 monitor
 record(mbbi, "$(P)$(R):$(CHAN):APPLICATION")
@@ -251,42 +251,42 @@ record(longin, "$(P)$(R):$(CHAN):DEVCTLPORT")
 {
   field(DESC, "Port number" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.1.1.1.11.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.1.2.1.1.1.11.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):SOCKETPORT")
 }
 record(longin, "$(P)$(R):$(CHAN):SOCKETPORT")
 {
   field(DESC, "Port number" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.2.1.1.8.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.1.2.2.1.1.8.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):PAIRPORT")
 }
 record(longin, "$(P)$(R):$(CHAN):PAIRPORT")
 {
   field(DESC, "Port number" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.3.1.1.5.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.1.2.3.1.1.5.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):ETHMODEMPORT")
 }
 record(longin, "$(P)$(R):$(CHAN):ETHMODEMPORT")
 {
   field(DESC, "Port number" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.4.1.1.2.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.1.2.4.1.1.2.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):REVTERMPORT")
 }
 record(longin, "$(P)$(R):$(CHAN):REVTERMPORT")
 {
   field(DESC, "Port number" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.6.1.1.3.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.1.2.6.1.1.3.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):PRINTERPORT")
 }
 record(longin, "$(P)$(R):$(CHAN):PRINTERPORT")
 {
   field(DESC, "Port number" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.1.2.7.1.1.2.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.1.2.7.1.1.2.$(CHAN)" )
 }
 record(calcout, "$(P)$(R):$(CHAN):SELPORT1")
 {
@@ -393,7 +393,7 @@ record(stringin, "$(P)$(R):$(CHAN):ALIAS")
 {
   field(DESC, "Port alias" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.1.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.1.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):ALIASMATCH")
 }
 record(scalcout, "$(P)$(R):$(CHAN):ALIASMATCH")
@@ -455,7 +455,7 @@ record(longin, "$(P)$(R):$(CHAN):BAUDRATERD")
 {
   field(DESC, "Port baud rate" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.3.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.3.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):BAUDRATE")
 }
 #% archiver 60 monitor
@@ -533,7 +533,7 @@ record(longin, "$(P)$(R):$(CHAN):DATABITSRD")
 {
   field(DESC, "Port data bits" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.5.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.5.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):DATABITS")
 }
 #% archiver 60 monitor
@@ -585,7 +585,7 @@ record(longin, "$(P)$(R):$(CHAN):STOPBITSRD")
 {
   field(DESC, "Port stop bits" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.6.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.6.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):STOPBITS")
 }
 #% archiver 60 monitor
@@ -639,7 +639,7 @@ record(longin, "$(P)$(R):$(CHAN):PARITYRD")
 {
   field(DESC, "Port parity" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.7.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.7.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):PARITY")
 }
 #% archiver 60 monitor
@@ -695,7 +695,7 @@ record(longin, "$(P)$(R):$(CHAN):FLOWCONTROLRD")
 {
   field(DESC, "Port flow control" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.8.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.4.2.1.1.8.$(CHAN)" )
   field(FLNK, "$(P)$(R):$(CHAN):FLOWCONTROL")
 }
 #% archiver 60 monitor
@@ -730,7 +730,7 @@ record(stringin, "$(P)$(R):$(CHAN):REMOTEIP")
 {
   field(DESC, "Remote IP" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.6.1.1.1.2.$(CHAN).1" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.6.1.1.1.2.$(CHAN).1" )
   field(SCAN, "5 second")
   field(DISV, "1")
   field(SDIS, "$(P)$(R):SNMPBUSY")
@@ -740,7 +740,7 @@ record(longin, "$(P)$(R):$(CHAN):TXTOTALCOUNT")
 {
   field(DESC, "Port parity" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.6.2.1.1.3.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.6.2.1.1.3.$(CHAN)" )
   field(SCAN, "5 second")
   field(FLNK, "$(P)$(R):$(CHAN):PARITY")
   field(DISV, "1")
@@ -751,7 +751,7 @@ record(longin, "$(P)$(R):$(CHAN):RXTOTALCOUNT")
 {
   field(DESC, "Port parity" )
   field(DTYP, "Snmp" )
-  field(INP,  "@$(HOST):161 public 1.3.6.1.4.1.8691.2.8.1.6.2.1.1.4.$(CHAN)" )
+  field(INP,  "@$(HOST):161 private 1.3.6.1.4.1.8691.2.8.1.6.2.1.1.4.$(CHAN)" )
   field(SCAN, "5 second")
   field(FLNK, "$(P)$(R):$(CHAN):PARITY")
   field(DISV, "1")

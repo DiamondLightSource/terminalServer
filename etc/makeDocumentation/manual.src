@@ -5,7 +5,11 @@ The terminalServer module contains templates that allow Avocent and Moxa
 terminal servers to be managed through their SNMP interfaces.
 
 \section bugs_sec Known Bugs
-No known bugs yet.
+At start up, the SNMP module performs reads of all OIDs referenced.  The Moxa template
+uses a couple of write only OIDs, so you see a few failures during initialisation.
+
+Also on the Moxa, the first time through the channel poll does not always fill in the
+port number.  The second time through sorts it out though.
 
 \section user_sec User Manual
 To use the module in an IOC, all that is needed is to instantiate some of the supplied templates.
@@ -57,6 +61,32 @@ disturbed.  If there is a difference between the terminal server configuration a
 red light will appear and user intervention will be required to resolve the issue.
 
 The current state of the terminal server is archived.
+
+The Moxa terminal servers are delivered with SNMP already configured and enabled.  Avocent terminal
+servers do not, they require some configuration to make them work.  The necessary configuration is
+available from their web page, but I've not had a great deal of success with that, it seems to get
+confused with the SNMP communities.  I have had more success using the command line tool, as follows.
+
+1. Log on to the terminal server
+
+    ssh root\@\<terminal_server_ip_address>
+
+2. Run the command line tool
+
+    /bin/CLI
+
+You may be asked to kick off another administrator at this point, type cancel to achieve this.
+
+3. Configure the SNMP
+
+    config network snmp v1v2 add community private oid .1 permission rw \<ip_address>/\<prefix> <br>
+    config security profile open <br>
+    config runconfig <br>
+    config savetoflash
+
+The \<ip_address>/\<prefix> string defines the range of machines allowed to access the server.
+For example, for the i15 beamline network it should be 172.23.115.0/24.
+
 
 \section build_sec Build Instructions 
 - \subpage build_instructions_example
