@@ -43,7 +43,7 @@ class Moxa(Device):
                           NCHANS = Simple("Number of channels", int))
 
 class Acs(Device):
-    Dependencies = (Snmp, )
+    Dependencies = (Snmp, Calc)
 
     def __init__(self, name, P, R, HOST, NCHANS, **args):
         Device.__init__(self)
