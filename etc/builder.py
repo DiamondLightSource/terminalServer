@@ -31,9 +31,9 @@ class Moxa(Device):
             _terminalServer32(name=name, P=P, R=R)
         else:
             _terminalServer16(name=name, P=P, R=R)
-        _moxa(P=P, R=R, HOST=HOST)
+        _moxa(name=name+"_top", P=P, R=R, HOST=HOST)
         for i in range(NCHANS):
-            _moxaChannel(P=P, R=R, CHAN=i+1, HOST=HOST)
+            _moxaChannel(name=name+"_"+str(i+1), P=P, R=R, CHAN=i+1, HOST=HOST)
 
     ArgInfo = makeArgInfo(__init__,
                           name = Simple("Object name", str),
@@ -51,9 +51,9 @@ class Acs(Device):
             _terminalServer32(name=name, P=P, R=R)
         else:
             _terminalServer16(name=name, P=P, R=R)
-        _acs(P=P, R=R, HOST=HOST)
+        _acs(name=name+"_top", P=P, R=R, HOST=HOST)
         for i in range(NCHANS):
-            _acsChannel(P=P, R=R, CHAN=i+1, HOST=HOST)
+            _acsChannel(name=name+"_"+str(i+1), P=P, R=R, CHAN=i+1, HOST=HOST)
 
     ArgInfo = makeArgInfo(__init__,
                           name = Simple("Object name", str),

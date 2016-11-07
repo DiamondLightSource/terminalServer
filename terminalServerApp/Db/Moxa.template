@@ -4,6 +4,7 @@
 # % macro, R,      Record name suffix
 # % macro, HOST,   SNMP server host name
 
+# % gui, $(name=), boyembed, terminalServerApp_opi/terminalServer.opi, P=$(P), name=$(name=)
 
 # Store and restart commands, write a '1' to these records to activate.
 # The SNMP agent blocks for up 30s while one of these executes, so we

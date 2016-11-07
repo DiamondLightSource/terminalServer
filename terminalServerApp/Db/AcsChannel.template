@@ -5,6 +5,8 @@
 # % macro, CHAN, Channel number
 # % macro, HOST, SNMP server host name
 
+# % gui, $(name=), boyembed, terminalServerApp_opi/terminalServerChannel.opi, P=$(P), CHAN=$(CHAN), name=$(name=)
+
 # Process this record to poll all the infrequent changing parameters
 
 record(seq, "$(P)$(R):$(CHAN):POLL")

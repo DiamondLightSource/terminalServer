@@ -5,6 +5,8 @@
 # % macro, CHAN, Channel number
 # % macro, HOST, SNMP server host name
 
+# % gui, $(name=), boyembed, terminalServerApp_opi/terminalServerChannel.opi, P=$(P), CHAN=$(CHAN), name=$(name=)
+
 #  On the Moxa, the result from an SNMP request typically does
 #  not get into the PV in time for another PV that is processed by a
 #  forward link.  So notice the use of CP links instead.
