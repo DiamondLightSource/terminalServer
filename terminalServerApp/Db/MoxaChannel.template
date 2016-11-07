@@ -4,6 +4,7 @@
 # % macro, R,    Record name suffix
 # % macro, CHAN, Channel number
 # % macro, HOST, SNMP server host name
+# % macro, name, object and GUI association name
 
 # % gui, $(name=), boyembed, terminalServerApp_opi/terminalServerChannel.opi, P=$(P), CHAN=$(CHAN), name=$(name=)
 

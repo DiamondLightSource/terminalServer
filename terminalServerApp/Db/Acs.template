@@ -3,6 +3,7 @@
 # % macro, P,    Record name prefix
 # % macro, R,    Record name suffix
 # % macro, HOST, SNMP server host name
+# % macro, name, object and GUI association name
 
 # % gui, $(name=), boyembed, terminalServerApp_opi/terminalServer.opi, P=$(P), name=$(name=)
 
