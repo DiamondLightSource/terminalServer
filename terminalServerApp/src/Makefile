@@ -3,7 +3,7 @@ TOP=../..
 include $(TOP)/configure/CONFIG
 
 # -------------------------------
-# Build an Diamond Support Module
+# Build a Diamond Support Module
 # -------------------------------
 
 LIBRARY_IOC += terminalServer
