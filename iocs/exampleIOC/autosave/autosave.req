@@ -1,0 +1,16 @@
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=1
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=2
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=3
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=4
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=5
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=6
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=7
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=8
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=9
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=10
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=11
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=12
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=13
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=14
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=15
+file moxa_channel_settings.req P=$(P),R=$(R),CHAN=16

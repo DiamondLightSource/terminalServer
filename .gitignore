@@ -7,8 +7,5 @@ data
 lib
 documentation/doxygen
 etc/module.in
-iocs/example
-iocs/example_sim 
 .svn*
-iocs/*IOC*
 .idea

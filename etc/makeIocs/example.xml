@@ -1,5 +1,0 @@
-<?xml version="1.0" ?>
-<components arch="linux-x86_64">
-	<terminalServer.Moxa HOST="172.23.115.3" NCHANS="16" P="BL15I-CS-MOXA-01" R="" name="Moxa1"/>
-	<terminalServer.Acs HOST="172.23.115.82" NCHANS="32" P="BL15I-CS-ACS-01" R="" name="Acs1"/>
-</components>
