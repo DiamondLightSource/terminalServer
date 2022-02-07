@@ -57,7 +57,6 @@ dbLoadRecords("$(TERMINALSERVER)/db/MoxaChannel.template", "P=BL99P-NT-TSERV-01,
 
 # Final ioc initialisation
 # ------------------------
-# dbLoadRecords 'db/example_expanded.db'
 iocInit
 
 # Autosave monitoring
