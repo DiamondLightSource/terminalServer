@@ -7,3 +7,7 @@
 -include $(TOP)/RELEASE.$(EPICS_HOST_ARCH)
 -include $(TOP)/RELEASE.$(EPICS_HOST_ARCH).Common
 -include $(TOP)/configure/RELEASE.local
+
+AUTOSAVE=   $(SUPPORT)/autosave/5-9dls2
+SNMP=       $(SUPPORT)/snmp/1-03dls10
+CALC=       $(SUPPORT)/calc/3-7-3
